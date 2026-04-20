@@ -7,7 +7,13 @@ function Header() {
         <a href="#about">Sobre</a>
         <a href="#learn">Habilidades</a>
         <a href="#portfolio">Projetos</a>
-        <a href="#blog">Linkedin</a>
+        <a
+          href="https://www.linkedin.com/in/camillaestevaolodi"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          linkedin
+        </a>
         <a href="#contact">Contato</a>
       </nav>
 
