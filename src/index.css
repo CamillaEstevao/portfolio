@@ -689,6 +689,12 @@ a {
   border-radius: 26px;
   padding: 28px;
   box-shadow: 0 18px 45px rgba(0, 0, 0, 0.05);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 24px 55px rgba(0, 0, 0, 0.08);
 }
 
 .project-card-featured {
@@ -718,6 +724,81 @@ a {
   color: #b4b4b4;
 }
 
+.project-image {
+  margin-bottom: 22px;
+}
+
+.project-image-screen {
+  border-radius: 20px;
+  overflow: hidden;
+  background: #f3f3f3;
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8);
+}
+
+.project-card-featured .project-image-screen {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.08);
+}
+
+.project-image-topbar {
+  display: flex;
+  gap: 8px;
+  padding: 14px 14px 0;
+}
+
+.project-image-topbar span {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.15);
+}
+
+.project-card-featured .project-image-topbar span {
+  background: rgba(255, 255, 255, 0.22);
+}
+
+.project-image-content {
+  padding: 18px 14px 16px;
+}
+
+.mock-block,
+.mock-block-lg,
+.mock-line {
+  border-radius: 12px;
+  background: rgba(0, 0, 0, 0.08);
+}
+
+.project-card-featured .mock-block,
+.project-card-featured .mock-block-lg,
+.project-card-featured .mock-line {
+  background: rgba(255, 255, 255, 0.16);
+}
+
+.mock-block-lg {
+  height: 120px;
+  margin-bottom: 14px;
+}
+
+.mock-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.mock-block {
+  height: 54px;
+}
+
+.mock-line {
+  height: 14px;
+}
+
+.mock-line.short {
+  width: 70%;
+}
+
 .project-card h2,
 .project-card h3 {
   font-size: 30px;
@@ -726,9 +807,8 @@ a {
   color: inherit;
 }
 
-.project-card h3 {
-  font-size: 24px;
-  color: #161616;
+.project-card h2 {
+  font-size: 28px;
 }
 
 .project-card p {
@@ -775,6 +855,11 @@ a {
   color: #111;
   font-size: 14px;
   font-weight: 700;
+  border: 1px solid rgba(0, 0, 0, 0.07);
+}
+
+.project-card-featured .project-actions a {
+  background: rgba(255, 255, 255, 0.96);
 }
 
 .projects-cta {
